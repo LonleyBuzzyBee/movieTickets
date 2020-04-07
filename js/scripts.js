@@ -6,19 +6,14 @@ function Ticket(agePrice, moviePrice, showTimePrice){
   this.basePrice = 7
 }
 
-
+//This can be moved to UI in future updates
 Ticket.prototype.printTicket = function(totalPrice){
-  
   $("p#hidden").show();
   $("#cost").html(totalPrice);
-
-
-
 };
 
 Ticket.prototype.addPrices = function() {
   var totalPrice = this.agePrice + this.moviePrice + this.showTimePrice + this.basePrice;
-  console.log("Add prices called, total price is: ", totalPrice);
   this.printTicket(totalPrice);
 };
 
@@ -35,7 +30,5 @@ $(document).ready(function() {
     var newTicket = new Ticket (agePrice, moviePrice, showTimePrice);
     
     newTicket.addPrices();
-    // newTicket.printTicket(totalPrice);
-    
   });
 });

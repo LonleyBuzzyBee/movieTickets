@@ -1,3 +1,26 @@
+.jumbotron{
+  box-shadow:#4287f5 5px 5px 5px ;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+button {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  padding: 20px;
+  color: white;
+  font-weight: bolder;
+  background-color: #4287f5;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  color: black;
+  background-color: #b7cef1;
+}
+
 #hidden {
   display:none;
 }
